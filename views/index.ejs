@@ -1,0 +1,33 @@
+
+
+<div class="glass">
+
+  <header class="app-header">
+   <h1>Weather Langs</h1>
+  </header>
+
+  <form action="/weather" method="POST">
+    <input type="text" name="city" placeholder="Enter city" required>
+    <button type="submit">Check Weather</button>
+    <link rel="stylesheet" href="main.css">
+  </form>
+
+  <div class="weather">
+    <% if (weather) { %>
+      <h2><%= weather.name %></h2>
+      <p>🌡️ <%= weather.main.temp %> °C</p>
+      <p>☁️ <%= weather.weather[0].description %></p>
+      <p> Heat Index: <%= weather.main.feels_like %></p>
+      <img src="https://openweathermap.org/img/wn/<%= weather.weather[0].icon %>@2x.png">
+    <% } %>
+    
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+  </div>
+
+  <footer class="app-footer">
+  <p>by: samuelcantprogramm</p>
+</footer>
+
+</div>

@@ -1,0 +1,125 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #38d9ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  padding: 1rem; 
+}
+
+
+.glass {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+  color: #ffffff;
+}
+
+
+.glass input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  margin-bottom: 14px;
+  font-size: 1rem;
+
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+
+.glass input::placeholder {
+  color: #777;
+}
+
+.glass button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.glass button:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: translateY(-1px);
+}
+
+.glass button:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: translateY(-1px);
+}
+
+.weather {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.weather img {
+  width: 90px;
+  margin: 0.5rem 0;
+}
+
+.weather h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.weather p {
+  margin: 0.2rem 0;
+  opacity: 0.95;
+}
+
+
+.app-header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.app-header h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+
+.app-footer {
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.app-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+
+.error {
+  margin-top: 1rem;
+  text-align: center;
+  color: #ffe5e5;
+  font-size: 0.95rem;
+}
